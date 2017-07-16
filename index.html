@@ -1,0 +1,41 @@
+<title>Game</title>
+<style>
+button {
+font-size:20px
+}
+h1 {
+font-size:50px
+}
+</style>
+<body>
+<center>
+<h1>JSGame</h1>
+<p></p>
+<button onclick=Game()>START</button>
+</center>
+<script>
+function Game() {
+var start = prompt("You are lost in a forest and you see a shed.\nWhat would you do?\n1.Go to the shed\n2.Continue Walking")
+if (start == 1) {
+var shed = prompt("You go to the shed and you see a mysterious figure in the shed.\nWhat would you do?\n1.Knock the door\n2.Go back")
+} else if (start == 2) {
+alert("You got attacked by a tiger and died.")
+}
+if (shed == 1) {
+var knock = prompt("You knocked the door and the man came out.\nHe said that he is so lonely in his shed.\nWhat do you want to do?\n1.Ask him for directions\n2.Go back to the forest.")
+} else if (shed == 2) {
+alert("You go back to the forest and die because of malnutrition and dehydration.")
+}
+if (knock == 1) {
+var tea = prompt("He invited you to sip a cup of tea.\nYou are already tired and want to sleep.\nWhat will you do?\n1.Sip the tea\n2.Go to sleep")
+} else if (knock == 2) {
+alert("You go back and your story ends here.\nTHE END")
+}
+if (tea == 1) {
+alert("You sip the tea.\nThen, you feel dizzy and go to sleep.\nTHE END")
+} else if (tea == 2) {
+alert("You fell asleep on his couch.\nTHE END")
+}
+}
+</script>
+</body>
